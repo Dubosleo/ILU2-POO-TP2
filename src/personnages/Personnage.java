@@ -6,9 +6,10 @@ public class Personnage {
 
 	public Personnage(String nom, int force) {
 		this.nom = nom;
+		if (force <= 0) {
+			throw new IllegalArgumentException("La force doit être strictement positive.");
+		}
 		this.force = force;
-		// Invariant
-		assert force > 0;
 	}
 
 	public int getForce() {

@@ -59,7 +59,9 @@ public class Etal {
 	 *         quantité de produit vendu
 	 */
 	public void libererEtal() {
-		etalOccupe = false;
+		this.vendeur = null;
+		this.produit = null;
+		this.quantite = 0;
 	}
 
 	/**
